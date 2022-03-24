@@ -1,0 +1,863 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* -- General CSS --------------------------------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url(images/bg.png);
+    background-size: cover;
+}
+
+/* -- Navigation CSS --------------------------------------------------------------- */
+
+nav {
+    background: #0f74bc;
+}
+
+.navbar-brand-custom img {
+    width: 300px;
+}
+.navbar-nav{
+    text-align: center;
+}
+.nav-link{
+    color: #fff !important;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.active {
+    border-bottom: 4px solid #fff;
+}
+
+/* --  Home Banner CSS --------------------------------------------------------------- */
+
+
+.home-banner-intro{
+    text-align: center;
+    background: #fff;
+    padding: 5px;
+}
+.home-banner-intro h1{
+    color: #15AE67;
+}
+.home-banner-intro hr {
+    border: 0;
+    background: url('images/hr.png') no-repeat center;
+    background-size: contain;
+    height: 10px !important;
+    opacity: unset;
+    margin: 0 auto;
+}
+
+.home-banner-image{
+    justify-content: space-evenly;
+}
+
+.home-banner-image img{
+    width: 100%;
+}
+
+.home-banner-content{
+    justify-content: center;
+    column-gap: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* --  Speech Bubble CSS --------------------------------------------------------------- */
+
+.home-banner-content .speech-bubble{
+    position: relative;
+    background: #FAEE00;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 0px;
+    margin: auto 0;
+}
+
+.home-banner-content .speech-bubble::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 15px 0 0 80px;
+    border-color: transparent #FAEE00;
+    top: 70px;
+    right: -50px;
+    margin-top: -20px;
+}
+
+.home-banner-content .speech-bubble p{
+    padding: 15px;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    color: #056FB8;
+}
+.home-banner-content .home-text p{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: justify;
+    color: #056FB8;
+    margin: auto 0;
+
+}
+
+ /* --  Home Body Section --------------------------------------------------------------- */
+ 
+.home-content-image{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home-body-content{
+    justify-content: center;
+}
+
+.home-body-circle {
+    background: #EFEFEF;
+    border: 2px solid #9FA0A0;
+    border-radius: 50%;
+    width: 250px;
+    padding: 35px;
+}
+
+.home-body-circle a{
+    text-decoration: none;
+}
+
+.home-body-heart{
+    margin: auto 0;
+}
+
+.home-body-content img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home-body-content p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.home-body-circle img{
+    border: 2px solid #9FA0A0;
+}
+
+.home-body-heart img{
+    width: 100px;
+    
+}
+
+.home-body-content p.click{
+    background: #F8B62D;
+    color: #000;
+    padding: 5px;
+    width: 60px;
+    border-radius: 7px;
+}
+
+/* --  Footer CSS --------------------------------------------------------------- */
+
+footer{
+    background: #C9BC9C !important;
+}
+
+footer .container div img{
+    width: 100%;
+}
+
+footer .container div img.blog{
+    width: 60%;
+    padding: 10px;
+}
+
+footer .container div{
+    margin: auto 0;
+}
+footer .container div{
+    position: relative;
+}
+
+footer .container div p.supported{
+    color: #000;
+    font-size: 16pt;
+}
+footer .container div .blog-btn {
+    position: absolute;
+    left: 15px;
+    bottom: -10px;
+    background: #056FB8;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline;
+}
+
+footer .container div img.pinokio{
+    border: 2px solid #9FA0A0;
+    padding: 5px;
+}
+ /* --  Tochigi Guide CSS --------------------------------------------------------------- */
+
+.tochigi-left{
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 48%;
+}
+
+.tochigi-left h3{
+    background-color: #F9ED32;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.tochigi-left-img{
+    background: url(images/map_jp.png) no-repeat center;
+    background-size: contain;
+    min-height: 400px;
+}
+
+.tochigi-content ul li{
+    font-size: 16pt;
+}
+
+.tochigi-right img{
+    width: 100%;
+    max-height: 350px;
+}
+
+.tochigi-right ul{
+    font-size: 16pt;
+    padding-top: 10px;
+}
+
+.tochigi-cat-container{
+    justify-content: space-between;
+
+}
+.tochigi-cat-container img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+.tochigi-cat-container h5{
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.tochigi-cat-container p{
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+/* --  Profile Page CSS --------------------------------------------------------------- */
+
+.profile-container h2, .service-container h2{
+    background-color: #88C9E1;
+    color: #FAEE00;
+    font-size: 18pt;
+    font-weight: bold;
+    display: inline;
+    border-radius: 12px;
+    padding: 8px;
+    
+}
+
+.profile-intro-one table {
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-intro-one table th{
+    text-align: center;
+    vertical-align: middle;
+}
+.profile-intro-one table ul{
+    display: inline;
+    text-align: left;
+    padding: 0%;
+    
+}
+.profile-intro-one table ul li{
+    color: #000;
+    font-size: 14pt;
+    list-style: none;
+}
+
+.profile-intro-one img{
+    width: 100%;
+}
+
+.profile-intro-two-list {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.profile-intro-two-list ul li{
+    font-size: 16pt;
+}
+.profile-intro-two img{
+    width: 100%;
+}
+/* Service Style */
+
+.service-row div {
+    position: relative;
+    padding: 5px;
+}
+.service-row img{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+
+}
+.service-row a {
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.service-row div:hover a {
+    display: inline;
+}
+
+/* -- Contact Page CSS --------------------------------------------------------------- */
+
+.contact-form-container form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-form-container h3{
+    background-color: #22AC39;
+}
+
+.required-sign{
+    color: red;
+}
+
+.contact-form-left div{
+    padding-bottom: 5px;
+}
+
+.checkbox {
+    background: #fff;
+    padding: 10px 20px;
+}
+
+.btn-send{
+    background-color: #F8B62D;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+/* -- Intern Page Style --------------------------------------------------------------- */
+
+.intern-container h2, .student-container h2{
+    background-color: #22AC39;
+    color: #fff;
+    display: inline;
+}
+
+.intern-container img{
+    width: 100%;
+}
+
+.intern-content {
+    margin-top: -40px;
+}
+.intern-content h5{
+    font-size: 16pt;
+    display: inline;
+}
+.intern-content h5.first-heading{
+    background: #231916;
+    color: #fff;
+    padding: 5px;
+}
+.intern-content h5.second-heading{
+    background: linear-gradient(
+      to right, 
+      #f2faff, #41aae9
+    );;
+    color: #000;
+    padding: 5px;
+}
+.intern-content span{
+    margin-left: 30px;
+    display: block;
+}
+.intern-content span a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+.intern-text{
+    font-size: 14pt;
+}
+.student-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media(max-width:900px){
+
+   
+
+    /* Home Banner CSS */
+
+    .home-banner-image{
+        justify-content: space-around;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .home-banner-content{
+        column-gap: 2.5rem;
+        width: 100%;
+    }
+
+    .home-banner-content .speech-bubble{
+        width: 150px;
+    }
+
+    .home-banner-content .home-text p{
+        font-size: 14pt;
+        text-align: justify;
+    }
+    .home-body-first-circle {
+        width: 200px;
+        padding: 30px;
+    }
+    .home-body-first-circle img{
+        width: 70px;
+    }
+ 
+    .home-body-first-circle .click{
+        width: 80px;
+    }
+    .home-content-image{
+        height: 200px;
+    }
+
+
+    /* Tochigi CSS */
+
+    .tochigi-right ul{
+        font-size: 14pt;
+        /* padding-top: 10px; */
+    }
+
+    /* Profile CSS  */
+
+    .profile-intro-one-img{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .profile-intro-two-list ul li{
+        font-size: 14pt;
+    }
+
+    /* Contact CSS */
+
+    .contact-form-container form{
+        width: 90%;
+    }
+
+     /* Footer CSS */
+
+     footer .container div p.supported{
+        color: #000;
+        font-size: 14pt;
+    }
+
+}
+
+
+@media(max-width:760px){
+    
+    /* Home CSS */
+
+    .home-banner-content .home-text p{
+        font-size: 14pt;
+    }
+    .home-body-circle {
+        width: 150px;
+        padding: 5px;
+    }
+    .home-body-circle a p{
+        font-size: 12pt;
+    }
+    .home-body-circle img{
+        width: 70px;
+    }
+
+    .home-body-heart{
+        width: 150px;
+    }
+ 
+    .home-body-circle .click{
+        width: 50px;
+    }
+
+    
+
+    /* Tochigi CSS */
+
+    .tochigi-left{
+        width: 100%;
+    }
+
+    .tochigi-cat-container img{
+        height: 250px;
+    }
+
+    /* Profile CSS */
+
+    .profile-container h2, .service-container h2{
+        font-size: 16pt;
+        
+    }
+    .profile-intro-one div{
+        padding-bottom: 10px;
+    }
+    .profile-intro-two-list ul li{
+        font-size: 14pt;
+    }
+    .profile-intro-two-list{
+        margin-left: 10px;
+    }
+
+    /* Intern CSS */
+    .student-row div{
+        padding: 5px;
+    }
+
+     /* Contact CSS */
+     .contact-form-container{
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+
+    /* Navigation CSS */
+
+    .navbar-brand img{
+        width: 250px;
+    }
+
+    .social-media-container img{
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    /* Home CSS */
+
+    .home-banner-intro h1{
+        font-size: 16pt;
+    }
+
+    .home-banner-intro h3{
+        font-size: 14pt;
+    }
+
+    .home-banner-image img{
+        width: 60%;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .home-banner-content .speech-bubble::after {
+        content: '';
+        width: 0;
+        border-width: 15px 0 0 60px;
+        top: 80px;
+        right: -20px;
+        margin-top: -20px;
+    }
+    .home-banner-content .speech-bubble p{
+        font-size: 12pt;
+    }
+    .home-banner-content .home-text p{
+        font-size: 12pt;
+        padding: 10px;
+    }
+
+    .home-content-image{
+        height: 100%;
+    }
+
+    .home-body-heart{
+        width: 100%;
+        padding: 10px;
+    }
+
+    
+
+    /* Tochigi CSS */
+
+    .tochigi-left-img{
+        
+        min-height: 250px;
+    }
+    
+    .tochigi-cat-container img{
+        height: 250px;
+    }
+
+    /* Profile Css */
+
+    .profile-container h2, .service-container h2{
+        font-size: 14pt;
+        
+    }
+    .profile-intro-two-list ul li{
+        font-size: 12pt;
+    }
+
+    /* Intern CSS */
+
+    .intern-content {
+        margin-top: -10px;
+    }
+
+    .intern-content h5{
+        font-size: 14pt;
+    }
+    .intern-content span a{
+        font-size: 14pt;
+    }
+
+    /* Footer CSS */
+
+    footer .container div .blog-btn {
+        font-size: 1rem;
+    }
+    
+}
+@media(max-width:420px){
+
+    /* General CSS */
+
+    .container-fluid{
+        padding: 15px !important;
+    }
+
+    .profile-container .row, .service-container.row, .intern-container .row, .student-container .row {
+        padding: 15px !important;
+    }
+
+    /* Navigation CSS */
+
+    .navbar-brand img{
+        width: 200px;
+    }
+
+    /* Home CSS */
+
+    .home-banner-container-img{
+        height: 350px;
+    }
+
+    .bubble-text{
+        margin-bottom: -20px
+    }
+    .home-text p{
+        font-size: 12pt;
+    }
+
+    .home-body-first-circle {
+        width: 150px;
+        padding: 10px;
+    }
+    .home-body-first-circle a p{
+        font-size: 10pt;
+    }
+    .home-body-first-circle img{
+        width: 60px;
+    }
+
+    .home-body-first-heart{
+        width: 150px;
+    }
+ 
+    .home-body-first-circle .click{
+        width: 60px;
+    }
+
+
+    /* Tochigi CSS */
+
+    .tochigi-left-img{
+        
+        min-height: 250px;
+    }
+
+    .tochigi-content ul li{
+        font-size: 12pt;
+    }
+
+    /* Profile CSS */
+    
+    .profile-container h2{
+        font-size: 12pt;
+    }
+    .profile-intro-one img{
+        width: 100%;
+        padding: 0;
+    }
+
+
+    /* Intern CSS */
+    .intern-content h5{
+        font-size: 10pt;
+    }
+    .intern-content span{
+        margin-left: 5px;
+    }
+    .intern-content span a{
+        font-size: 12pt;
+    }
+    
+
+    /* Contact CSS */
+
+    .contact-form-container form{
+        width: 80%;
+    }
+
+    .contact-form-container h3{
+        background-color: #22AC39;
+        font-size: 12pt;
+        
+    }
+    .contact-form-container label{
+        font-size: 12pt;
+    }
+    .contact-form-container form{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /* Footer CSS */
+
+    footer .container div .blog-btn {
+        font-size: 12pt;
+    }
+}
+
+@media(max-width:320px){
+
+
+    /* Home CSS */
+
+    .home-banner-container-img{
+        height: 300px;
+    }
+
+    .home-text p{
+        font-size: 10pt;
+    }
+
+    .home-body-first{
+        margin: 0 50px;
+    }
+
+
+    /* Tochigi CSS */
+
+    .tochigi-right ul li{
+        font-size: 10pt;
+    }
+
+    /* Profile CSS */
+
+    .profile-container h2{
+        font-size: 10pt;
+    }
+
+    .profile-container{
+        padding: 0;
+        margin: 0;
+    }
+  
+
+    /* Intern CSS */
+    .intern-content h5{
+        font-size: 10pt;
+    }
+    .intern-content span a{
+        font-size: 10pt;
+    }
+
+    /* Footer */
+
+    footer .container div .blog-btn {
+        font-size: 10pt;
+        bottom : -15px;
+    }
+
+   
+}
